@@ -1,0 +1,73 @@
+site_name: 数字逻辑复习
+site_author: linkdom
+
+theme:
+  name: material
+  palette:
+    - scheme: default # day mode
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode # Optional, defaults to "Switch to dark mode"
+    - scheme: slate # night mode
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode # Optional, defaults to "Switch to light mode"
+  features:
+    - navigation.instant # Instant navigation
+    - navigation.tabs # Tabs in navigation
+    - navigation.top # Top navigation
+    - navigation.tracking # Tracking navigation
+    - navigation.index # Index navigation
+    - navigation.expand # Expand navigation
+    - navigation.sections # Sections navigation
+    - search.suggest # Search suggestions
+    - search.highlight # Search highlight
+  language: 'zh'
+  icon:
+    repo: fontawesome/brands/github
+
+edit_uri: edit/main/docs
+repo_url: https://github.com/donglinkang2021/DigitLogic
+repo_name: digitlogic
+copyright: Copyright © 2022 linkdom
+
+# top-right links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/donglinkang2021
+      name: Github | linkdom
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/531177225
+      name: Bilibili | 用心的小康同学
+    - icon: fontawesome/brands/qq
+      link: https://www.cnblogs.com/linkdom/
+      name: Cnblogs | linkdom
+
+# extensions
+plugins:
+    - search:
+        lang:
+            - en
+            - ja 
+    - mermaid2:
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - mkdocs/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
+  # - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+
+extra_css:
+    - mkdocs/css/unordered-list-symbols.css      
